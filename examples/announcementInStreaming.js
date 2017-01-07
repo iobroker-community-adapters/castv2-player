@@ -28,6 +28,13 @@ function runPromise() {
       volume: 50,
     });
   })
+  //playAnnouncementPromise again
+  .then( function () {
+    return mediaPlayer.playAnnouncementPromise(JSON.stringify({
+      url: defines.urls.shortSingle,
+      volume: 50,
+    }));
+  })
   //Final checks
   .then (function () {
     return common.finalizeOk(mediaPlayer);  
