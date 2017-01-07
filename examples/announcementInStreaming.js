@@ -23,7 +23,10 @@ function runPromise() {
   })
   //playAnnouncementPromise
   .then( function () {
-    return mediaPlayer.playAnnouncementPromise(defines.urls.shortSingle);
+    return mediaPlayer.playAnnouncementPromise({
+      url: defines.urls.shortSingle,
+      volume: 50,
+    });
   })
   //Final checks
   .then (function () {
