@@ -17,8 +17,9 @@ describe('Basic functions', function() {
   });
 });
 
-var basePlaylist  = require("../examples/basePlaylist");
-var announcement  = require("../examples/announcement");
+var basePlaylist             = require("../examples/basePlaylist");
+var announcement             = require("../examples/announcement");
+var announcementInStreaming  = require("../examples/announcementInStreaming");
 describe('Playlist', function() {
   it('Basic Streaming', function(done) {
       this.timeout(20000); //It usually takes 7 seconds
@@ -29,6 +30,12 @@ describe('Playlist', function() {
   it('Announcement', function(done) {
       this.timeout(45000); //It usually takes 25 seconds
       announcement(done)
+      .then  (function(){ done(0); })
+      .catch (function(){ done(1); });
+  });
+  it('Announcement during streaming', function(done) {
+      this.timeout(45000); //It usually takes 25 seconds
+      announcementInStreaming(done)
       .then  (function(){ done(0); })
       .catch (function(){ done(1); });
   });
