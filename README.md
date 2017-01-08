@@ -1,10 +1,10 @@
-# cast2-player
-==============
+cast2-player
+============
 
-[![NPM version](http://img.shields.io/npm/v/cast2-player.svg)](https://www.npmjs.com/package/cast2-player)
-[![Downloads](https://img.shields.io/npm/dm/cast2-player.svg)](https://www.npmjs.com/package/cast2-player)
+[![NPM version](http://img.shields.io/npm/v/castv2-player.svg)](https://www.npmjs.com/package/castv2-player)
+[![Downloads](https://img.shields.io/npm/dm/castv2-player.svg)](https://www.npmjs.com/package/castv2-player)
 
-[![NPM](https://nodei.co/npm/cast2-player.png?downloads=true)](https://nodei.co/npm/cast2-player/)
+[![NPM](https://nodei.co/npm/castv2-player.png?downloads=true)](https://nodei.co/npm/castv2-player/)
 
 ### A Node.js Chromecast player library
 A player based on the new (CASTV2) protocol used by Chromecast
