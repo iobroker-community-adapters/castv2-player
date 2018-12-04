@@ -1,5 +1,5 @@
 "use strict"
-let playerName     = ".."; //Change to "catstv2-player to execute outside this folder
+let playerName     = ".."; //Change to "castv2-player to execute outside this folder
 var ScannerPromise = require(playerName).ScannerPromise();
 var MediaPlayer    = require(playerName).MediaPlayer();
 
