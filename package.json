@@ -9,7 +9,6 @@
     "array-find": "^1.0.0",
     "castv2-client": "^1.2.0",
     "dev-null": "^0.1.1",
-    "dns-txt": "^2.0.2",
     "icy": "^2.1.0",
     "mime-types": "^2.1.21",
     "multicast-dns": "^7.2.0",
@@ -18,7 +17,7 @@
     "util": "^0.11.1"
   },
   "devDependencies": {
-    "mocha": "^3.2.0"
+    "mocha": "^5.2.0"
   },
   "scripts": {
     "test": "node_modules/.bin/mocha"
