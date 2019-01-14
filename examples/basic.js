@@ -8,7 +8,7 @@ var common         = require("./common")(log);
 function runPromise() {
 
   let mediaPlayer;
-  
+
   //Setup
   return common.setupPromise()
   .then (function (mP) {
@@ -21,7 +21,7 @@ function runPromise() {
     defines.urls.longSingle,
     defines.urls.longSingle);
   })
-  
+
   //CLIENT ACTIONS
   //set volume
   .then( function () {return mediaPlayer.setVolumePromise(13);})
@@ -92,10 +92,14 @@ function runPromise() {
   })
   //Final checks
   .then (function () {
-    return common.finalizeOk(mediaPlayer);  
+    let mp = mediaPlayer;
+    mediaPlayer=undefined;
+    return common.finalizeOk(mp);
   })
   .catch (function (err) {
-    return common.finalizeError(mediaPlayer, err);  
+    let mp = mediaPlayer;
+    mediaPlayer=undefined;
+    return common.finalizeError(mp, err);
   });
 }
 
@@ -104,11 +108,11 @@ function runPromise() {
 module.exports = runPromise;
 
 //main
-var main = function () { 
+var main = function () {
   runPromise()
   .then (function()    {process.exit(0);})
   .catch(function(err) {process.exit(1);});
-} 
-if (require.main === module) { 
-    main(); 
+}
+if (require.main === module) {
+    main();
 }

@@ -14,10 +14,12 @@
     "multicast-dns": "^7.2.0",
     "playlist-parser": "0.0.12",
     "sprintf-js": "^1.1.2",
-    "util": "^0.11.1"
+    "util": "^0.11.1",
+    "why-is-node-running": "^2.0.3"
   },
   "devDependencies": {
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "why-is-node-running": "^2.0.3"
   },
   "scripts": {
     "test": "node_modules/.bin/mocha"

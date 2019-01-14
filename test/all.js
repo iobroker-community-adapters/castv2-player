@@ -1,5 +1,5 @@
 "use strict"
-
+const log = require('why-is-node-running') // should be your first require
 var basic     = require("../examples/basic");
 var streaming = require("../examples/streaming");
 describe('Basic functions', function() {
@@ -28,7 +28,7 @@ describe('Playlist', function() {
       .catch (function(){ done(1); });
   });
   it('Announcement', function(done) {
-      this.timeout(45000); //It usually takes 25 seconds
+      this.timeout(60000); //It usually takes 45 seconds
       announcement(done)
       .then  (function(){ done(0); })
       .catch (function(){ done(1); });
@@ -40,3 +40,7 @@ describe('Playlist', function() {
       .catch (function(){ done(1); });
   });
 });
+
+// setTimeout(function () {
+//   log() // logs out active handles that are keeping node running
+// }, 10000)
