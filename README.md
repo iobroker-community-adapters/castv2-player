@@ -11,11 +11,6 @@ A player based on the new (CASTV2) protocol used by Chromecast
 
 Built as wrapper of the [node-castv2-client](https://github.com/thibauts/node-castv2-client) library.
 
-## [Sponsors](./SPONSORS.md)
-If you like my work, please feel free to provide a personal donation  
-(this is an personal Donate link for Jey Cee, no relation to the ioBroker Project !)  
-[![Donate](https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.wled/master/admin/button.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=95YZN2LR59Q64&source=url)
-
 ##Features
 * Scanner
   * for each device: name, IP, port, type (audio, video, audio group) 
