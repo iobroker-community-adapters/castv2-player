@@ -41,7 +41,6 @@ Check the [main class](lib/mediaPlayer.js).
 
 
 ## Changelog
-
-### __WORK IN PROGRESS__
+### 2.1.3 (2022-08-19)
 * (Bjoern3003) set album name as song if provided in icy-name
 * (Apollon77/aortmannm) Make compatible with Node.js 16+
