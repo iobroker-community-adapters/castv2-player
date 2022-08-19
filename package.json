@@ -24,7 +24,8 @@
     "why-is-node-running": "2.2.2"
   },
   "scripts": {
-    "test": "node_modules/.bin/mocha"
+    "test": "node_modules/.bin/mocha",
+    "release": "release-script"
   },
   "repository": {
     "type": "git",
