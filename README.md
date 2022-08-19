@@ -38,3 +38,10 @@ You can run all examples as testcases with `npm test`
 ## Intefaces
 
 Check the [main class](lib/mediaPlayer.js).
+
+
+## Changelog
+
+### __WORK IN PROGRESS__
+* (Bjoern3003) set album name as song if provided in icy-name
+* (Apollon77/aortmannm) Make compatible with Node.js 16+
