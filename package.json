@@ -14,7 +14,7 @@
     "multicast-dns": "^7.2.5",
     "playlist-parser": "0.0.12",
     "sprintf-js": "^1.1.2",
-    "util": "^0.12.4",
+    "util": "^0.12.5",
     "why-is-node-running": "^2.2.2"
   },
   "devDependencies": {
